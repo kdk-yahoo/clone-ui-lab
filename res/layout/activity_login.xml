@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#8084113b" 
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/tvLoginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tvLoginLabelString"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnCancel"
+            android:layout_below="@+id/etPassword"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:background="#BABABA"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_str"
+            android:onClick="cancel" />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvForgetPswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_my_password_str" 
+            android:layout_below="@+id/btnCancel"
+            android:layout_centerHorizontal="true"
+            android:textColor="#3882F2"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_below="@+id/etEmailAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/etPasswordStr"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_str" 
+            android:layout_below="@+id/etPassword"
+            android:layout_alignParentRight="true"
+            android:background="#52f2f2"
+            android:onClick="login"
+            />
+
+        <EditText
+            android:id="@+id/etEmailAdd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLoginLabel"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/etEmailAddStr"
+            android:inputType="textEmailAddress" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

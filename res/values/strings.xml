@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tvLoginLabelString">Login. Here we go!</string>
+    <string name="etEmailAddStr">E-mail address</string>
+    <string name="etPasswordStr">Password</string>
+    <string name="cancel_str">Cancel</string>
+    <string name="login_str">Login</string>
+    <string name="forget_my_password_str">I forget my password</string>
+
+</resources>
